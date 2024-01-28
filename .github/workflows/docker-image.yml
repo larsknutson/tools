@@ -15,7 +15,7 @@ jobs:
     - name: docker login
       run: docker login -u $DOCKER_USER -p $DOCKER_TOKEN 
     - name: Build the Docker image # push The image to the docker hub
-      run: docker build . --file Dockerfile --tag latest
+      run: docker build . --file Dockerfile --tag lknutson/tools
     - name: Docker Push
       run: docker push lknutson/tools
     
