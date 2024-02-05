@@ -25,6 +25,7 @@ RUN yum install -y \
   wireshark \
   wget \
   jq \
+  iputils \
   && yum clean all && rm -rf /var/cache/yum /tmp/* /var/tmp/*
 
 RUN curl -s https://raw.githubusercontent.com/jedrecord/sysinfo/master/sysinfo \
